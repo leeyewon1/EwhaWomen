@@ -384,7 +384,7 @@
 .main_banner .banner_contnet figure p {
   text-align: center;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 20px;
 }
 
@@ -857,6 +857,7 @@
 #Footer .family_site {
   display: flex;
   gap: 30px;
+
 }
 
 #Footer .family_site .site {
@@ -866,6 +867,7 @@
   cursor: pointer;
   padding: 0 20px;
   user-select: none;
+  font-weight: 500;
 }
 
 /* 
@@ -957,7 +959,7 @@
   justify-content: space-between;
   gap: 35px;
   border-bottom: 1px solid var(--line-color);
-  margin: 0 0 15px 0;
+  margin: 0 0 17px 0;
 }
 
 #Footer .f_bott .f_nav li a {
