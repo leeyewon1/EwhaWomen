@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 :root {
   --primary-color: #00664f;
@@ -97,11 +97,15 @@
   font-weight: 500;
 }
 
+.gnb > ul > li > a:hover {
+  color: var(--background--color);
+}
+
 /* 서브메뉴 */
 
 .gnb > ul > li .sub {
   position: absolute;
-  top: 130px;
+  top: 160px;
   left: 0;
 
   width: 100%;
@@ -111,7 +115,11 @@
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
-  transform: 0.3s;
+  transition: 0.3s;
+
+  background:rgba(10,74,50,0.97) url(../images/gnb_b.png)no-repeat no-repeat 89% 80px;
+  
+
 }
 
 #header .gnb>ul>li:hover .sub {
@@ -142,6 +150,42 @@
   flex-wrap: wrap;
   overflow: hidden;
 }
+
+.gnb > ul > li .sub_wrap .sub_list>li>a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+
+  text-align: left;
+  padding: 10px 0;
+  width: auto;
+  height: 100%;
+  word-break: keep-all;
+
+  color:#9ac1b2;
+
+}
+#header .gnb>ul>li .sub_wrap .sub_list>li .sub_m {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  color:var(--secondary-color);
+}
+
+
+.gnb > ul > li .sub_wrap .sub_list>li>a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 1px;
+  height: 350px;
+  background:rgba(255,255,255,0.3);
+}
+
 
 @media (max-width: 768px) {
   #header {
@@ -386,23 +430,13 @@
   color: rgba(225, 225, 225, 3);
 }
 
+
+
 /*main_qui  */
 
 .main_qui {
   position: relative;
 }
-
-/* .main_qui .inner::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  width: 80%;
-  height: 50%;
-  transform: translate(-50%, -50%);
-
-  background: #32262625;
-} */
 
 .main_qui .title_box h2 {
   font-size: 32px;
@@ -439,12 +473,13 @@
 
 .main_qui .qui_bott > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
 }
 
 .main_qui .qui_bott > ul > li {
-  background: #eee;
+  background: transparent;
+  border: 1px dotted #ddd;
   line-height: 40px;
 }
 
@@ -463,8 +498,11 @@
   align-items: center;
   width: 100%;
   padding: 0 0 0 12px;
+
+  font-weight: 300;
 }
 
+/*  */
 .main_banner {
 }
 
