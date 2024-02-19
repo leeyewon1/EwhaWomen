@@ -1,6 +1,6 @@
-* {
-  outline: 1px solid tomato--;
-}
+/* * {
+  outline: 1px solid tomato;
+} */
 
 :root {
   --primary-color: #00664f;
@@ -577,8 +577,99 @@
   font-weight: 400;
 }
 
+/* main_banner  스와이퍼 */
+
+
+.main_banner .inner {
+  display: flex;
+  max-width: calc((100% - 1510px)/2 + 1352px);
+  margin: 0 0 0 auto;
+  padding: 0 0 0 16px;
+}
+
+.main_banner .inner .title {
+  position: relative;
+  flex: 0 0 250px;
+  padding: 16px 0 0 0;
+
+}
+
+/* .main_banner .inner .title::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+} */
+
+.main_banner .inner .title p {
+  line-height: 24px;
+  margin: 0 0 4px 0;
+}
+
+.main_banner .inner .slide_area {
+  flex: 1;
+  min-width: 0;
+}
+
+.main_banner .inner .slide_area .itm {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  background: var(--line-color);
+  border-radius: 32px;
+}
+
+.main_banner .inner .slide_area .itm .img_box {
+  margin: 0 0 32px 0;
+  border-radius: 12px;
+  height: 350px;
+  width: 40%;
+  overflow: hidden;
+}
+
+.main_banner .inner .slide_area .itm .cate {
+  margin: 0 0 24px 0;
+  align-items: flex-start;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 16px;
+}
+
+.main_banner .inner .slide_area .itm strong {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 24px;
+  white-space: normal;
+
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.main_banner .main_customer_arrows button {
+  background: transparent;
+  border: none;
+}
+
+.main_banner .main_customer_arrows span {
+  padding:16px;
+  font-size: 24px;
+  background: var(--background--color);
+  color: var(--black-color);
+  border-radius: 50%;
+  margin: 0 1px 0 0;
+}
+
+
 /*  */
-.main_banner {}
+/* .main_banner {}
 
 .main_banner .title {
   text-align: left;
@@ -672,7 +763,7 @@
     font-weight: 300;
     line-height: 20px;
   }
-}
+} */
 
 /* main_zone */
 
