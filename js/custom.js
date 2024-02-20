@@ -28,7 +28,7 @@ $(function () {
     });
 
 
-      
+
 
 
     $('.pop_slide').slick({
@@ -78,24 +78,19 @@ $(function () {
 });
 
 
-const MAIN_NOTICE_SLIDE = new Swiper(".main_notice_slide", {
+const MAIN_NOTICE_SLIDE = new Swiper('.main_notice_slide', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 2.5,
     spaceBetween: 30,
-  });
+});
 
-const MAIN_MS_LEFT_BUTTON = document.querySelector(
-    ".main_banner .main_customer_arrows .left"
-  );
-  
-  MAIN_MS_LEFT_BUTTON.addEventListener("click", () => {
+
+const MAIN_NS_LEFT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .left');
+MAIN_NS_LEFT_BUTTON.addEventListener('click', () => {
     MAIN_NOTICE_SLIDE.slidePrev();
-  });
-  
-  const MAIN_MS_RIGHT_BUTTON = document.querySelector(
-    ".main_banner .main_customer_arrows .right"
-  );
-  
-  MAIN_MS_RIGHT_BUTTON.addEventListener("click", () => {
+});
+
+const MAIN_NS_RIGHT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .right');
+MAIN_NS_RIGHT_BUTTON.addEventListener('click', () => {
     MAIN_NOTICE_SLIDE.slideNext();
-  });
+});
