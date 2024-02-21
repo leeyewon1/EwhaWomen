@@ -1,5 +1,13 @@
 $(function () {
 
+    $('#header .mopen').on('click', function () {
+        $('.gnb').toggleClass('on')
+    });
+
+    $('.hidden_search button').on('click', function () {
+        $('#form').toggleClass('on')
+    });
+
 
     $('.main_slide').on('init afterChange', function (e, s, c) {
         const current = $('.main_slide .slick-current');
@@ -78,19 +86,19 @@ $(function () {
 });
 
 
-const MAIN_NOTICE_SLIDE = new Swiper('.main_notice_slide', {
-    loop: true,
-    slidesPerView: 2.5,
-    spaceBetween: 30,
-});
+// const MAIN_NOTICE_SLIDE = new Swiper('.main_notice_slide', {
+//     loop: true,
+//     slidesPerView: 2.5,
+//     spaceBetween: 30,
+// });
 
 
-const MAIN_NS_LEFT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .left');
-MAIN_NS_LEFT_BUTTON.addEventListener('click', () => {
-    MAIN_NOTICE_SLIDE.slidePrev();
-});
+// const MAIN_NS_LEFT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .left');
+// MAIN_NS_LEFT_BUTTON.addEventListener('click', () => {
+//     MAIN_NOTICE_SLIDE.slidePrev();
+// });
 
-const MAIN_NS_RIGHT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .right');
-MAIN_NS_RIGHT_BUTTON.addEventListener('click', () => {
-    MAIN_NOTICE_SLIDE.slideNext();
-});
+// const MAIN_NS_RIGHT_BUTTON = document.querySelector('.main_banner .main_customer_arrows .right');
+// MAIN_NS_RIGHT_BUTTON.addEventListener('click', () => {
+//     MAIN_NOTICE_SLIDE.slideNext();
+// });

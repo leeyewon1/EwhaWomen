@@ -27,57 +27,62 @@
         <header id="header" class="header">
             <div class="top">
                 <div class="inner">
+                    <!-- <div class="left"> -->
+                    <h1>
+                        <a href="/">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <!-- </div> -->
 
-
-                    <div class="left">
-                        <h1>
-                            <a href="/">
-                                <img src="./images/logo.png" alt="">
-                            </a>
-                        </h1>
+                    <!-- <div class="right"> -->
+                    <div class="search">
+                        <form action="" id="form">
+                            <input type="text" name="searchKeyword" placeholder="검색어를 입력하세요" autocomplete="off">
+                            <button type="sumit"><i class="xi-search"></i></button>
+                        </form>
                     </div>
-                    <div class="right">
-                        <div class="search">
-                            <input type="text" class="text" name="searchKeyword" id="searchKeyword"
-                                placeholder="검색어를 입력하세요" autocomplete="off">
-                            <button type="sumit" class="btn-search">
-                                <i class="xi-search"></i>
-                            </button>
-                        </div>
 
-                        <div class="utill">
-                            <a href=""><i class="xi-user-o"></i></a>
-                            <a href=""><i class="xi-globus"></i></a>
-                        </div>
-
-
-                        <div class="mopen">
-                            <button class="hamburger hamburger--spring" type="button">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
+                    <div class="hidden_search">
+                        <button><i class="xi-search"></i></button>
                     </div>
+
+                    <div class="utill">
+                        <a href=""><i class="xi-user-o"></i></a>
+                        <a href=""><i class="xi-globus"></i></a>
+                    </div>
+
+
+                    <div class="mopen">
+                        <button class="hamburger" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
+
             <div class="bottom">
                 <div class="inner">
                     <nav class="gnb">
                         <ul>
-                            <li>
-                                <a href="">이화소개</a>
+                            <li><a href="">이화소개</a>
                                 <ul class="sub">
                                     <div class="sub_wrap">
                                         <li>
                                             <ul class="sub_list">
                                                 <li>
                                                     <a href="" class="sub_m">총장실</a>
+                                                    <ul class="sub_list2">
+                                                        <li><a href="">인사말</a></li>
+                                                        <li><a href="">프로필</a></li>
+                                                        <li><a href="">총장활동</a></li>
+                                                        <li><a href="">역대총장</a></li>
+                                                    </ul>
                                                 </li>
-                                                <li><a href="">인사말</a></li>
-                                                <li><a href="">프로필</a></li>
-                                                <li><a href="">총장활동</a></li>
-                                                <li><a href="">역대총장</a></li>
+
                                             </ul>
                                         </li>
                                         <li>
@@ -1363,10 +1368,11 @@
             </section>
 
             <section class="main_sns default">
-                <div class="title inner">
-                    <h2>SNS</h2>
-                    <strong>일상을 공유해요! #데일리 #이화여자대학교</strong>
-
+                <div class="inner">
+                    <div class="title">
+                        <h2>SNS</h2>
+                        <strong>일상을 공유해요! #데일리 #이화여자대학교</strong>
+                    </div>
                     <div class="sns">
                         <ul class="menu_list">
                             <li class="on instagram">
@@ -1390,83 +1396,72 @@
                     <div class="con_list">
                         <div class="con on">
                             <ul>
-                                <a href="" target="_blank">
-                                    <li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns01.jpeg" alt="">
-
                                         <strong>이화캠퍼스리더가 창단 25주년을 맞이하였습니다!</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns02.jpeg" alt="">
-
                                         <strong>2023 이화여대 조형예술대학 졸업작품전 포토스케치</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns03.jpeg" alt="">
-
                                         <strong>2024년 신년음악회에 이화인 여러분을 초대합니다!!</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns04.jpeg" alt="">
-
                                         <strong>초가을의 이화 (feat. 교육학과 황규호 교수)</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+
                         <div class="con">
                             <ul>
-                                <a href="" target="_blank">
-                                    <li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns_y01.jpg" alt="">
-
                                         <strong>이화캠퍼스리더가 창단 25주년을 맞이하였습니다!</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns_y02.jpg" alt="">
-
                                         <strong>이화캠퍼스리더가 창단 25주년을 맞이하였습니다!</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns_y03.jpg" alt="">
-
                                         <strong>2024년 신년음악회에 이화인 여러분을 초대합니다!!</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
-
-                                <a href="" target="_blank">
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
                                         <img src="./images/main_sns_y04.jpg" alt="">
-
                                         <strong>초가을의 이화 (feat. 교육학과 황규호 교수)</strong>
                                         <span>2023.08.29</span>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+
                     </div>
+                </div>
             </section>
         </main>
 
