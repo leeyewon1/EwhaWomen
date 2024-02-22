@@ -83,6 +83,12 @@ $(function () {
         $(this).next().slideToggle();
     });
 
+    $('.gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        }
+    });
+
 });
 
 
